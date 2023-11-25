@@ -1,0 +1,235 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    z-index: 1;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+}
+.product-image {
+    width: 200px; 
+    height: auto; 
+}
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#contactSection {
+    padding: 80px 0;
+    background-color: #343333;
+}
+
+#contactSection p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#contactSection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#contactSection li {
+    margin-bottom: 10px;
+}
+
+#contactSection a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+#contactSection a:hover {
+    text-decoration: underline;
+}
+
+
+#contactSection .col-md-6:nth-child(odd) {
+    background-color: #f8f9fa;
+}
+
+#contactSection .col-md-6:nth-child(even) {
+    background-color: #e9ecef;
+}
+.about-container {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.about-item {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #333;
+}
+
+.image-col img {
+    width: 100%;
+    height: auto;
+}
+
+.about-title {
+    margin: 20px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.about-content {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.visible {
+    display: block !important;
+}
+.container-fluid {
+    text-align: center;
+    z-index: 1;
+}
+.blog_img {
+    height: 500px;
+    border-radius: 50px;
+}
+.button {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgb(17, 29, 44);
+      border-radius: 10rem;
+      z-index: -2;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: rgb(8, 74, 76);
+      transition: all .3s;
+      border-radius: 10rem;
+      z-index: -1;
+    }
+    
+    &:hover {
+      color: #fff;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+
+#ArticleBackground {
+    position: absolute;
+    z-index:  2;
+    height: 123vh;
+    
+    display: none;
+    background-color: #333;
+    justify-content: center;
+    top: 0px;
+    opacity: 0.5;
+    color: #007BFF;
+  }
+#Article1Content {
+    position: absolute;
+    z-index:  2;
+    height: 660px;
+    text-align: center;
+    display: none;
+    background-color: #333;
+    justify-content: center;
+    top: 100px;
+    color: #ccd4dc;
+}
+#Article2Content {
+    position: absolute;
+    z-index:  3;
+    height: 660px;
+    text-align: center;
+    display: none;
+    background-color: #333;
+    justify-content: center;
+    top: 100px;
+    color: #ccd4dc;
+}
+#Article3Content {
+    position: absolute;
+    z-index:  3;
+    height: 660px;
+    text-align: center;
+    display: none;
+    background-color: #333;
+    justify-content: center;
+    top: 100px;
+    color: #ccd4dc;
+}
+.container-news h2{
+    text-align: center;
+    border: #333 1px;
+}
+.row-news {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.discount-message {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 9999;
+}
+
+
